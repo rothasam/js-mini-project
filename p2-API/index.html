@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD Example Tutorial
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+	<h1><center>ANT Training Center</center></h1>
+	<hr>
+		<div class="employee-form">
+                <form autocomplete="off">
+                    <div>
+                        <label>Full Name*</label>
+                        <label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <label class="validation-error hide" id="invalidName">Invalid Name!!</label>
+                        <input type="text" name="fullName" id="fullName" value="Jerry">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <label class="validation-error hide" id="emailValidationError">This field is required.</label>
+                        <label class="validation-error hide" id="emailValidate">Invalid Email!!</label>
+                        <input type="text" name="email" id="email" value="jerry@gmail.com">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <label class="validation-error hide" id="salaryValidationError">This field is required.</label>
+                        <label class="validation-error hide" id="salaryNumType">Invalid Salary!!</label>
+                        <input type="text" name="salary" id="salary" value="300">
+                    </div>
+                    <div>
+                        <label>City</label><label class="validation-error hide" id="cityValidationError">This field is required.</label>
+                        <input type="text" name="city" id="city" value="PP">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input  type="button" id="insertData" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+     
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email Id</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                       <!-- <tr>
+                            <td>Rotha</td>
+                            <td>@gmail.com</td>
+                            <td>300</td>
+                            <td>PP</td>
+                            <td><button onclick="editData(this)" id="clickMe">Edit</button> <button onclick="deleteData(this)">Delete</button></td>
+                       </tr>
+                       <tr>
+                            <td>Sok</td>
+                            <td>sok@gmail.com</td>
+                            <td>1300</td>
+                            <td>PP</td>
+                            <td><button onclick="editData(this)" id="clickMe">Edit</button> <button onclick="deleteData(this)">Delete</button></td>
+                       </tr> -->
+                    </tbody>
+                </table>
+        </div>
+    
+    <script src="./js/scipt.js"></script>
+</body>
+</html>
